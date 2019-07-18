@@ -65,6 +65,9 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+img{
+	width: 100%;
+}
 
 html, body {
     height: 100%;
@@ -240,6 +243,11 @@ ul{
 li{
 	margin-bottom: 10px;
 }
+
+section {
+	width: 100%;
+}
+
 
 
 @media all and (max-width:890px) {
