@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/*list-style: none;*/
 }
 blockquote, q {
 	quotes: none;
@@ -64,3 +64,215 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+img{
+	width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+html {
+	text-align: justify;
+	width: 90vw;
+	margin-left: 5vw;
+}
+
+
+header{
+	background: white;
+	padding-top:10px;
+	padding-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+article{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	width: 100%;
+	text-align: justify;
+}
+
+.first-article{
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+.first-article section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section{
+	padding: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: darkgray;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.title{
+	vertical-align: 800%;
+}
+
+.btn {
+	padding: 2px 40px;
+	margin-left:60px;
+	margin-right:60px;
+	border: 1px solid black;
+	color: black;
+	text-align: center;
+	display: block;
+	}
+
+h1 {
+	font-size: 2rem;
+}
+
+.indexPage{
+	font-size: 6vw;
+	text-align: center;
+	display: block;
+}
+
+
+nav a{
+	width: 200px;
+}
+
+
+nav img{
+	width: 200px;
+}
+
+.middle-img{
+	width: 100%;
+}
+
+footer {
+	margin-top:30px;
+	padding-top:30px;
+	margin-bottom: 30px;
+	border-top: 1px solid black;
+}
+
+footer h2{
+	text-align: left;
+}
+
+footer a{
+	text-align: left;
+	display:block;
+}
+
+.centered {
+	text-align: center;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.column a{
+	padding: 10px 0px;
+}
+
+.fiftyPercentWide{
+	flex-wrap: wrap;
+	width: 45%;
+}
+
+.threeWide{
+	width: 28%;
+}
+
+.learnMoreBox{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background: lightgray;
+	border: 1px solid black;
+	margin: 20px;
+	padding:20px;
+}
+
+.learnMoreButton{
+	background: white;
+	border: 1px solid black;
+	padding: 10px 30px;
+	margin-top:20px;
+}
+
+ul{
+	margin: 20px;
+}
+li{
+	margin-bottom: 10px;
+}
+
+section {
+	width: 100%;
+}
+
+
+
+@media all and (max-width:890px) {
+    .decor {
+		display: none;
+	}
+	article{
+		flex-direction: column;
+	}
+
+	.threeWide, .fiftyPercentWide {
+		width: 100%;
+	}
+
+	.learnMoreBox{
+		margin: 20px 0px;
+	}
+
+	nav{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav a{
+		padding: 10px;
+	}
+	
+  }
